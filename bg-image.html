@@ -24,10 +24,12 @@
         background-size: cover;
       }
       .inner {
-        margin: 20px auto;
+        height: 400px;
+        position: relative;
+        border: 3px solid green;
       }
       .subpart {
-        margin: 0 auto;
+        margin: 10px auto;
       }
       .inner-again {
         margin: 110px 40px 40px 20px;
@@ -42,22 +44,51 @@
       .bar-part-two-two {
         width: 50px;
       }
-      .container {
-        /* width: 700px; */
+      .inner-again {
+        margin: 0;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
       }
     </style>
   </head>
   <body>
-    <div class="container-fluid wrap mt-5">
+    <div class="container wrap mt-5">
       <div class="row inner">
-        <div class="inner-again col-md-12 row">
-          <div class="col-sm-4 subpart">
+        <div class="inner-again col-md-5 row">
+          <div class="col-md-4 col-lg-4 col-sm-12 subpart">
             <h5>Photo of me:</h5>
             <div class="fakeimg"></div>
             <p class="bg-primary my-1 w-50 bar-height bar-part-one-one"></p>
             <p class="bg-primary bar-height bar-part-one-two"></p>
           </div>
-          <div class="col-sm-4 subpart">
+          <div class="col-md-4 col-lg-4 col-sm-12 subpart">
+            <h5>Photo of me:</h5>
+            <div class="fakeimg"></div>
+            <p class="bg-primary w-50 my-1 bar-height bar-part-two-one"></p>
+            <p class="bg-primary bar-height bar-part-two-two"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container wrap mt-5">
+      <div class="row inner">
+        <div class="inner-again col-md-8 row">
+          <div class="col-md-4 col-lg-4 col-sm-12 subpart">
+            <h5>Photo of me:</h5>
+            <div class="fakeimg"></div>
+            <p class="bg-primary my-1 w-50 bar-height bar-part-one-one"></p>
+            <p class="bg-primary bar-height bar-part-one-two"></p>
+          </div>
+          <div class="col-md-4 col-lg-4 col-sm-12 subpart">
+            <h5>Photo of me:</h5>
+            <div class="fakeimg"></div>
+            <p class="bg-primary w-50 my-1 bar-height bar-part-two-one"></p>
+            <p class="bg-primary bar-height bar-part-two-two"></p>
+          </div>
+          <div class="col-md-4 col-lg-4 col-sm-12 subpart">
             <h5>Photo of me:</h5>
             <div class="fakeimg"></div>
             <p class="bg-primary w-50 my-1 bar-height bar-part-two-one"></p>
